@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+header {
+    background-color: #f0f3f7;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    display: fixed;
+}
+.nav {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px;
+}
+.nav__list a {
+    text-decoration: none;
+    padding: 3px 20px;
+    color: #7a7a7a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 8px;
+}
+.nav__list  {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    
+}
+.logo--text {
+    font-size: 30px;
+    font-weight: 800;
+    color: #0f9d58;
+}
+.list--first {
+    color: white !important;
+}
+.nav__list a:hover, .list--first {
+    color: white;
+    background-color: #0f9d58;
+    border-radius: 14px;
+}
+.nav__shop i {
+    font-size: 30px;
+    color: #0f9d58;
+}
+.nav__menu i {
+    font-size: 30px;
+    color: #0f9d58;
+    display: none;
+}
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    box-shadow:  rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;;
+}
+.food-menu {
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 10%);
+    text-align: center;
+}
+.title {
+    font-size: 20px;
+}
+.primary-color {
+    color: #0f9d58;
+}
+.food-menu > p {
+    font-size: 16px;
+    margin: 30px 0;
+}
+.food-items {
+    display: flex;
+    overflow-y: hidden;
+}
+button {
+    padding: 5px 30px;
+    border-radius: 12px;
+    margin: 0 20px;
+    color: #0f9d58;
+    outline: none;
+    border: 2px solid #0f9d58;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: transparent;
+}
+.items--first > button {
+    background-color: #0f9d58;
+    color: white;
+}
+button:hover {
+    background-color: #0f9d58;
+    color: white;;
+}
+.food-img {
+    width: 25%;
+    height: 30px;
+}
+.food-category {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+img {
+    width: 170px;
+    height: 180px;
+}
+
+.menufood{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+  }
+  .bigTitle h1{
+    font-size: 22px;
+    font-weight: 700;
+    
+  }
+  .scp{
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 30px 0;;
+  }
+  .categogy-food{
+    display: flex;
+    
+    justify-content: start;
+  }
+  .categogy-food__items{
+    width: 100px;
+    padding: 5px;
+    font-size: 12px;
+    border: #0f9d58 solid 2px;
+    border-radius: 10px;
+    margin: 0 20px;
+    color: #0f9d58;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .categogy-food__items:hover {
+    background-color: #0f9d58;
+    color: #f0f3f7;
+  }
+  .food-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  
+  }
+  
+  .food-item {
+    width: 240px;
+    height: 280px;
+    margin: 10px;
+    border-radius: 8px;
+    margin: 20px auto;
+  }
+  .food-item:hover {
+    box-shadow: 2px 2px 2px 3px #ccc;
+  }
+
+  .image-container{
+    height: 60%;
+    overflow: hidden;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    border-radius: 26px;
+  }
+  .food-item .image:hover {
+    transform: scale(2) rotate(45deg);
+  }
+  .img01, .img08, .img06{
+    background-image: url(./img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);
+  }
+  .img02, .img04, .img07{
+    background-image: url(./img/carly-jayne-Lv174o7fn7Y-unsplash.jpg);
+  }
+  .img03{
+    background-image:url(./img/jonathan-farber-OCNqOLeCwOc-unsplash.jpg);
+  }
+  .img05{
+    background-image: url(./img/sina-piryae-bBzjWthTqb8-unsplash.jpg);
+  }
+  .scp-food{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 15px;
+  }
+  .nameandprice{
+    font-size: 14px;
+    color: #9da2ad;
+    
+  }
+  @media only screen and (min-width:600px) and (max-width:800px){
+    .food-container {
+        grid-template-columns: auto auto;
+    }
+    .nav__list, .nav__shop {
+        display: none;
+    }
+   .nav__menu i {
+    display: block;
+   }
+  }
+  @media only screen and (max-width:599px) {
+    .food-container {
+      grid-template-columns: auto auto;
+  }
+  .nav__list, .nav__shop {
+      display: none;
+  }
+ .nav__menu i {
+  display: block;
+ }
+    .food-container {
+      grid-template-columns: auto;
+    }
+  }
